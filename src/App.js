@@ -10,7 +10,7 @@ function App() {
       .get(url)
       .then((result) => {
         setData(result.data);
-        console.log(result.data);
+        //console.log(result.data); -- for checking
       })
       .catch((err) => {
         console.log(err);
