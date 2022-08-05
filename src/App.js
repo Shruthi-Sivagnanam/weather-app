@@ -37,6 +37,12 @@ function App() {
           </div>
           <div className="temp">
             {data.main && <h1> {(data.main.temp / 10).toFixed()}°C</h1>}
+            {data.main && (
+              <p>Max temp: {(data.main.temp_max / 10).toPrecision(5)}°C</p>
+            )}
+            {data.main && (
+              <p>Min temp: {(data.main.temp_min / 10).toPrecision(5)}°C</p>
+            )}
           </div>
           <div className="description">
             {data.weather && data.weather[0].description}
